@@ -1,6 +1,14 @@
-# Coming Soon!! Learn `Tailwind CSS`
+<div align="center">
 
-Learn how to use **`Tailwind CSS`** to craft superb apps!
+![tailwind-css-logo](https://user-images.githubusercontent.com/194400/174442927-3476e0a5-eca7-43fd-b68c-5a3f3248e1f8.svg)
+
+Learn how to use **`Tailwind CSS`** 
+to craft pixel-perfect 
+beautifully adaptive 
+web apps/sites
+in less time.
+
+</div>
 
 We're already using `Tailwind` for our `Phoenix LiveView` Chat Example:
 https://github.com/dwyl/phoenix-liveview-chat-example
