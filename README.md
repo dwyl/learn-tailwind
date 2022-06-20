@@ -9,6 +9,8 @@ web apps/sites
 in less time.
 
 </div>
+<br />
+
 - [Why?](#why)
   - [Why _switch_ to `Tailwind`?](#why-switch-to-tailwind)
     - [What about `Tachyons`?](#what-about-tachyons)
@@ -28,20 +30,26 @@ Many people consider
 ![css-awesome](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
 
 We think _everyone_ building web apps/sites
-should **learn `CSS`**.
+should **learn `CSS`**. <br />
 However we _agree_ that it can feel frustrating 
 and often overwhelming.
 Many software engineers/developers
 feel they already have _enough_ to learn
 with the rest of their chosen 
-["stack"](https://github.com/dwyl/technology-stack)
-so investing the time to perfect the _interface_
+["stack"](https://github.com/dwyl/technology-stack),
+so investing the time 
+to perfect the _interface_ design & layout 
+feels like too much.
+We get it!
+
 
 Learning **`Tailwind`** 
-will not mean you don't need to learn/understand `CSS`.
+will not mean 
+you don't need to learn/understand `CSS`.
+But it will make it easier.
 
 
-> We feel the infamy of `CSS` is unjustified.
+> We think the infamy of `CSS` is unjustified.
 Like learning how to 
 [juggle](https://en.wikipedia.org/wiki/Juggling),
 you will get hit in the face 
@@ -93,15 +101,20 @@ We still ❤️ it and will use it where it makes sense.
 
 # What?
 
-**`Tailwind`** has several advantages:
 
-1. Declarative utility focussed `CSS` classes
-   that allow you to **in-line** the **styles** of a given UI component
-   so you never have to go hunting for a style definition.
+
+**`Tailwind`** has several key advantages:
+
+1. **Declarative utility focussed `CSS`** classes
+   that allow you to **in-line** the **styles** in UI element
+   so you never have to hunt for a style definition across multiple files.
 2. **Built-in pre-processor bundles** and _minimises_ your `CSS`
    Never ship bloated `CSS` again; especially important for larger projects.
-3. **Actively developed** by the original author who is still passionate about the project,
+3. **Actively developed** by the original author 
+   who is still passionate about the project,
    see: 
+   [What's New in `Tailwind` 3](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
+   where 
 4. **_Thriving_ community** with _many_ contributors, 
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 5. **UI Library** [not free but very reasonably priced!]
@@ -121,17 +134,20 @@ This guide is aimed at anyone
 that:
 
 A. Wants to _evaluate_ `Tailwind` for themselves
-without the hype.
+without the hype. <br />
 B. Needs to learn `Tailwind` 
 as fast as possible
-but without skipping any steps!
+but without skipping any steps! <br />
 C. Has to _summarise_ & _share_ 
 their knowledge of `Tailwind`
 with a team/community of people.
 
 # How? 
 
-The 
+If you just want to test
+`Tailwind` with the least effort,
+use the online playground:
+[play.tailwindcss.com](https://play.tailwindcss.com/)
 
 
 ## Part 1: `Try` _Before_ You `Commit` 
