@@ -78,6 +78,10 @@ As with all technology decisions,
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
 
+### What about `XYZ` Framework?
+
+There is a virtually _endless_ list of 
+https://dev.to/samlan/best-css-frameworks-for-2022-1afm
 ### What about `Tachyons`?
 
 We were _happy_ with
@@ -149,6 +153,13 @@ If you just want to test
 use the online playground:
 [play.tailwindcss.com](https://play.tailwindcss.com/)
 
+![tailwind-play-color-change](https://user-images.githubusercontent.com/194400/174629457-cda42165-8242-4f04-afe1-8d7c75da6c2b.gif)
+
+
+Speed-read through the docs: 
+[tailwindcss.com/**docs/utility-first**](https://tailwindcss.com/docs/utility-first)
+and try a changing a few values,
+e.g: start by changing color names.
 
 ## Part 1: `Try` _Before_ You `Commit` 
 
