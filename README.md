@@ -13,8 +13,9 @@ in less time.
 
 - [Why?](#why)
   - [Why _switch_ to `Tailwind`?](#why-switch-to-tailwind)
-    - [What about `Tachyons`?](#what-about-tachyons)
 - [What?](#what)
+    - [What about `XYZ` Framework?](#what-about-xyz-framework)
+    - [What about `Tachyons`?](#what-about-tachyons)
 - [Who?](#who)
 - [How?](#how)
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
@@ -78,31 +79,6 @@ As with all technology decisions,
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
 
-### What about `XYZ` Framework?
-
-There is a virtually _endless_ list of 
-https://dev.to/samlan/best-css-frameworks-for-2022-1afm
-### What about `Tachyons`?
-
-We were _happy_ with
-**`Tachyons`**
-and still think it's _great_!
-even more so considering
-we were _already_ happy with
-the CSS framwork we were using; 
-**`Tayc
-
-We have been using 
-[**`Taychyons`**](https://github.com/tachyons-css/tachyons/#docs)
-for the past 5 years
-and documented our learning in
-[dwyl/**learn-tachyons**](https://github.com/dwyl/learn-tachyons)
-and 
-[dwyl/**tachyons-bootstrap**](https://github.com/dwyl/tachyons-bootstrap).
-We still ❤️ it and will use it where it makes sense.
-
-
-
 # What?
 
 
@@ -130,6 +106,54 @@ Bonus:
 1. Looks likely `Tailwind` will be included 
    in a future `Phoenix` release ...
    Given that 
+
+
+### What about `XYZ` Framework?
+
+There is a **virtually _endless_ list**
+of **`CSS` frameworks**, component libraries and pre-processors
+see: 
+[github.com/troxler/**awesome-css-frameworks**](https://github.com/troxler/awesome-css-frameworks) 
+...
+For a good _comparison_
+read:
+[athemes.com/collections/**best-css-frameworks**](https://athemes.com/collections/best-css-frameworks/)
+or
+[dev.to/samlan/**best-css-frameworks-for-2022**-1afm](https://dev.to/samlan/best-css-frameworks-for-2022-1afm)
+
+
+### What about `Tachyons`?
+
+We are _happy_ with
+**`Tachyons`**
+and still think it's _great_!
+
+We have been using 
+[**`Taychyons`**](https://github.com/tachyons-css/tachyons/#docs)
+for the past 5 years
+and documented our learning in
+[dwyl/**learn-tachyons**](https://github.com/dwyl/learn-tachyons)
+and 
+[dwyl/**tachyons-bootstrap**](https://github.com/dwyl/tachyons-bootstrap).
+We still ❤️ it and will use it where it makes sense.
+`Taychons` is lightweight (**`14kb`**)
+and has _similar_ utility classes to `Tailwind`.
+
+The key diference is `Tachyons` is _just_ the `CSS` 
+(_which is great for anywhere 
+you **don't want** to have 
+build pipline/process_)
+whereas `Tailwind` is a `JavaScript` library
+that includs parser/pre-processor.
+That means you are _forced_ 
+to have a build step in your dev/deployment pipeline
+to use `Tailwind`.
+However, given that `Tailwind` works with **`esbuild`** 
+(_which is **very fast** and reliable 
+and already **included with `Phoenix`**_)
+we feel that the trade-off is worth it for the flexibility. 
+
+
 
 
 # Who?
