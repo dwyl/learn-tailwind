@@ -3,7 +3,8 @@
 ![tailwind-css-logo](https://user-images.githubusercontent.com/194400/174442927-3476e0a5-eca7-43fd-b68c-5a3f3248e1f8.svg)
 
 Learn how to use **`Tailwind CSS`** 
-to craft pixel-perfect 
+to craft 
+**pixel-perfect**
 beautifully adaptive 
 web apps/sites
 in less time.
@@ -14,8 +15,9 @@ in less time.
 - [Why?](#why)
   - [Why _switch_ to `Tailwind`?](#why-switch-to-tailwind)
 - [What?](#what)
-    - [What about `Tachyons`?](#what-about-tachyons)
-    - [What about `XYZ` Framework?](#what-about-xyz-framework)
+  - [`!important` `Tailwind` Eliminates the "Cascade"](#important-tailwind-eliminates-the-cascade)
+  - [What about `Tachyons`?](#what-about-tachyons)
+  - [What about `XYZ` Framework?](#what-about-xyz-framework)
 - [Who?](#who)
 - [How?](#how)
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
@@ -28,12 +30,15 @@ in less time.
 Many people consider 
 `CSS` difficult.
 
-![css-awesome](https://cloud.githubusercontent.com/assets/194400/25721528/adec307c-3108-11e7-8f66-10edae56e6f0.png)
+![family-guy-css-meme](https://user-images.githubusercontent.com/194400/174753363-aa63871c-97a0-456f-a24c-0c8c1b834602.gif)
+
+> Plenty of memes:
+> https://www.google.com/search?q=css+meme&tbm=isch
 
 We think _everyone_ building web apps/sites
 should **learn `CSS`**. <br />
 However we _agree_ that it can feel frustrating 
-and often overwhelming.
+and often overwhelming. <br />
 Many software engineers/developers
 feel they already have _enough_ to learn
 with the rest of their chosen 
@@ -54,20 +59,15 @@ But it will make it easier.
 Like learning how to 
 [juggle](https://en.wikipedia.org/wiki/Juggling),
 you will get hit in the face 
-by a few stray objects
+by a few stray objects$$
 in your quest to learn `CSS`.
 If you invest the time 
 to learn `CSS` from first principals,
 you will have the skills
 to avoid the frustration.
-
-
 > As with most things,
 it's usually just a matter of taking the time 
 to learn/understand how things work.
-But for some reason many engineers 
-don't want to invest the time 
-to learn `CSS` 
 
 
 
@@ -78,6 +78,8 @@ our UI library _lightly_.
 As with all technology decisions,
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
+
+
 
 # What?
 
@@ -108,14 +110,45 @@ Bonus:
    Given that 
 
 
-### What about `Tachyons`?
+## `!important` `Tailwind` Eliminates the "Cascade"
 
-[**`@dwyl`**](https://github.com/dwyl/learn-tachyons/issues/1
+One of the most amazing and powerful features 
+of `CSS` ("**_Cascading_ Style Sheets**")
+is also one of the greatest sources 
+of frustration when using `CSS`.
+When you have a "cascade",
+styles can be applied globally 
+to your web site/app
+and thus you only have to change 
+things in one place
+for them to take effect _everwhere_.
+In practice this only works when 
+everyone editing the `CSS` 
+is reasonably proficient 
+and there is a clear _system_
+for making the changes.
+
+When all styles are **_globally_ scoped**,
+making fine adjustments to the position
+of a particular UI element becomes tedious
+which leads to spagheti code 
+full of specificity headaches.
+If you see the word
+[**`!important`**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+in `CSS` you know that
+people have given up
+on the _maintainability_.
+
+
+## What about `Tachyons`?
+
+[**`@dwyl`**](https://github.com/dwyl/learn-tachyons/issues/1)
 we've been using 
 [**`Taychyons`**](https://github.com/tachyons-css/tachyons/#docs)
 (Functional CSS Library)
 for the past **5 years**
-and (as always) comprehensively 
+and (as always) 
+_comprehensively_
 documented our learning in
 [dwyl/**learn-tachyons**](https://github.com/dwyl/learn-tachyons)
 and 
@@ -149,7 +182,7 @@ that also has the flexibility/power
 of a customizable design system.
 
 
-### What about `XYZ` Framework?
+## What about `XYZ` Framework?
 
 There is a **virtually _endless_ list**
 of **`CSS` frameworks**, 
