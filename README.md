@@ -37,6 +37,7 @@ Use these links to skip stright to the section that interests you:
     - [Create `index.html`](#create-indexhtml)
   - [Part 2: `Tailwind` in `Phoenix`](#part-2-tailwind-in-phoenix)
     - [Build Log (How we got here)](#build-log-how-we-got-here)
+    - [More Detailed Example!](#more-detailed-example)
 
 # Why?
 
@@ -439,13 +440,83 @@ mix deps.get
 ```
 
 
+Once installed, 
+add the following lines to `config/config.exs`
+to pick your tailwind version of choice:
+
+```elixir
+config :tailwind,
+  version: "3.1.0",
+  default: [
+    args: ~w(
+      --config=tailwind.config.js
+      --input=css/app.css
+      --output=../priv/static/assets/app.css
+    ),
+    cd: Path.expand("../assets", __DIR__)
+  ]
+```
+
+Now you can intall the library:
+```sh
+mix tailwind.install
+```
+
+That will create a `assets/tailwind.config.js` file.
 
 
-We're already using `Tailwind` for our `Phoenix LiveView` Chat Example:
+For development, we want to enable watch mode. 
+So find the `watchers` section in `config/dev.exs` 
+and add:
+
+```elixir
+tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+```
+
+> **Note**: this enables the file system watcher.
+
+Ensure that the `import "../css/app.css"` line
+is no longer in `assets/js/app.js` 
+(should have automatically been removed by adding `Tailwind` ...)
+
+Finally, back in your `mix.exs`, 
+make sure you have a `assets.deploy` alias for deployments, 
+which will also use the `--minify` option:
+
+```elixir
+"assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
+```
+
+Open the `lib/app_web/templates/page/index.html.heex` 
+and replace the contents with:
+
+```html
+<h1 class="text-7xl text-white font-bold text-center w-full bg-slate-800 rounded-xl shadow-lg py-3 mt-3 ml-3">
+  Hello TailWorld!
+</h1>
+```
+
+Run the `Phoenix` App:
+```sh
+mix phx.server
+```
+
+Visit [**`localhost:4000`**](http://localhost:4000)
+in your web browser:
+
+![image](https://user-images.githubusercontent.com/194400/174838767-20bf201e-3179-4ff9-8d5d-751295d1d069.png)
+
+Those semantic utility class names should give you a _flavour_
+for what to expect in the UI. 
+
+
+### More Detailed Example!
+
+
+We're using `Tailwind` for our `Phoenix LiveView` Chat Example:
 https://github.com/dwyl/phoenix-liveview-chat-example
 
 ![liveview-chat-with-tailwind-css](https://user-images.githubusercontent.com/194400/174119023-bb83f5f4-867c-4bfa-a005-26b39c700137.gif)
 
 We think it's _siiiiiiick_!
-So we'll be writing up our notes soon.
-⭐ / 👀 the repo for updates. 
+More examples to follow soon!

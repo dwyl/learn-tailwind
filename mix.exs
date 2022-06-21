@@ -71,7 +71,7 @@ defmodule App.MixProject do
     [
       c: ["coveralls.html"],
       setup: ["deps.get"],
-      "assets.deploy": ["esbuild default --minify", "phx.digest"]
+      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
     ]
   end
 end
