@@ -9,6 +9,13 @@ beautifully adaptive
 web apps/sites
 in less time.
 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/learn-tailwind/Elixir%20CI?label=build&style=flat-square)](https://github.com/dwyl/learn-tailwind/actions/workflows/ci.yml)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tailwind/main.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-tailwind?branch=main)
+[![Hex.pm](https://img.shields.io/hexpm/v/phoenix?color=brightgreen&style=flat-square)](https://hex.pm/packages/phoenix)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tailwind/issues)
+[![HitCount](http://hits.dwyl.com/dwyl/learn-tailwind.svg)](http://hits.dwyl.com/dwyl/learn-tailwind)
+
+
 </div>
 <br />
 
@@ -18,6 +25,7 @@ in less time.
   - [`!important` `Tailwind` Eliminates the "Cascade"](#important-tailwind-eliminates-the-cascade)
   - [What about `Tachyons`?](#what-about-tachyons)
   - [What about `XYZ` Framework?](#what-about-xyz-framework)
+  - [`Tailwind` in `Phoenix`](#tailwind-in-phoenix)
 - [Who?](#who)
 - [How?](#how)
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
@@ -28,7 +36,8 @@ in less time.
 # Why?
 
 Many people consider 
-`CSS` difficult.
+[`CSS`](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
+difficult.
 
 ![family-guy-css-meme](https://user-images.githubusercontent.com/194400/174753363-aa63871c-97a0-456f-a24c-0c8c1b834602.gif)
 
@@ -52,22 +61,23 @@ We get it!
 Learning **`Tailwind`** 
 will not mean 
 you don't need to learn/understand `CSS`.
-But it will make it easier.
+But it will make it 
+**a _lot_ easier**.
 
 
 > We think the infamy of `CSS` is unjustified.
 Like learning how to 
 [juggle](https://en.wikipedia.org/wiki/Juggling),
 you will get hit in the face 
-by a few stray objects$$
+by a few stray objects
 in your quest to learn `CSS`.
 If you invest the time 
 to learn `CSS` from first principals,
 you will have the skills
 to avoid the frustration.
 > As with most things,
-it's usually just a matter of taking the time 
-to learn/understand how things work.
+it's usually just a matter of _making_ the time 
+to learn/understand it.
 
 
 
@@ -79,43 +89,70 @@ As with all technology decisions,
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
 
+We feel that the benefits of switching
+(outlined below)
+justify the cost -
+learning time, updating code & maintenance.
 
+We encourage you to read through this doc
+and make up your own mind
+if `Tailwind` is a good fit 
+for you and your team/project.
 
 # What?
 
+**`Tailwind` CSS** 
+is a utility-first CSS framework 
+that can be composed to build any design, 
+directly in your markup. ~
+[**tailwindcss.com**](https://tailwindcss.com/)
+
+> Read through their landing page,
+> it summarises the benefits very well.
+
+It lets you **in-line styles** 
+directly in a UI element
+so you never have to hunt 
+for a style definition across multiple files.
+It means you don't suffer 
+the change-one thing 
+breaks many others pain
+of traditional `CSS`.
+
+This is a **_huge_ time saver** in even a modest sized project.
 
 
-**`Tailwind`** has several key advantages:
+## Key Advantages of **`Tailwind`**
 
-1. **Declarative utility focussed `CSS`** classes
-   that allow you to **in-line** the **styles** in UI element
-   so you never have to hunt for a style definition across multiple files.
-2. **Built-in pre-processor bundles** and _minimises_ your `CSS`
-   Never ship bloated `CSS` again; especially important for larger projects.
-3. **Actively developed** by the original author 
+1. **_Declarative_ utility focussed `CSS`** classes
+   that allow you to **_locally_ scope** 
+   all presentation
+   and avoid polluting the _global_ space.
+2. **Built-in pre-processor bundles** 
+   and **_minimises_ your styles**
+   so you never ship bloated `CSS` again; 
+   _especially_ important for larger projects.
+3. **_Actively_ developed** by the original author 
    who is still passionate about the project,
    see: 
    [What's New in `Tailwind` 3](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
-   where 
-4. **_Thriving_ community** with _many_ contributors, 
+   where the creator 
+   [Adam Wathan](https://adamwathan.me) 
+   summarises recent improvements.
+4. **_Thriving_ community** with _many_ contributors 
+   and frequent improvements, 
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 5. **UI Library** [not free but very reasonably priced!]
    which means there is a **_sustainable_ business model** 
    i.e. it wont cease to be maintained
 
-Bonus:
-
-1. Looks likely `Tailwind` will be included 
-   in a future `Phoenix` release ...
-   Given that 
-
-
 ## `!important` `Tailwind` Eliminates the "Cascade"
 
 One of the most amazing and powerful features 
-of `CSS` ("**_Cascading_ Style Sheets**")
+of `CSS` 
+(["**_Cascading_ Style Sheets**"](https://en.wikipedia.org/wiki/CSS))
 is also one of the greatest sources 
-of frustration when using `CSS`.
+of _frustration_ when using it in _practice.
 When you have a "cascade",
 styles can be applied globally 
 to your web site/app
@@ -202,6 +239,42 @@ by the
 **`Elixir` / `Phoenix` community** toward `Tailwind`.
 
 
+## `Tailwind` in `Phoenix`
+
+There are already _official_ instructions 
+in the **`Tailwind` docs** for including it in **`Phoenix`**:
+[tailwindcss.com/docs/guides/**phoenix**](https://tailwindcss.com/docs/guides/phoenix)
+
+It looks likely **`Tailwind`** will be _included_
+in a **_future_ `Phoenix` release** ... 🔮 <br />
+
+At this point **`2022-06-21`** it is _speculation_,
+because there is no 
+[**`public` roadmap**](https://github.com/dwyl/product-roadmap)
+for **`Phoenix`**. 🤷‍♀️ <br />
+However given that 
+[**Chris McCord**](https://github.com/chrismccord)
+_creator_ of 
+[**`Phoenix`**](https://www.phoenixframework.org/)
+is _actively_
+working on an **_official_
+`Tailwind` package** for **`Phoenix`**:
+[github.com/**phoenixframework/tailwind**](https://github.com/phoenixframework/tailwind)
+and is _using_ it at his 
+["day job"](https://github.com/dwyl/learn-devops/issues/72#issuecomment-917442712)
+building the 
+[Fli.io dashboard](https://github.com/dwyl/technology-stack/issues/87#issuecomment-1161649391),
+we take this as very good sign.
+
+Also, the fact that 
+[Milligram](https://github.com/milligram/milligram),
+the _current_ default `CSS` library
+[included with `Phoenix@1.6.x`](https://github.com/phoenixframework/phoenix/blob/e0991bb3eea1fd397a898bc2640e3efd72b065c0/installer/templates/phx_static/phoenix.css#L5)
+was 
+[last updated **2 years** ago ...](https://github.com/dwyl/technology-stack/issues/94#issue-1261227465)
+_suggests_ that it will be replaced at some point.
+
+<br />
 
 
 # Who?
@@ -209,14 +282,17 @@ by the
 This guide is aimed at anyone
 that:
 
-A. Wants to _evaluate_ `Tailwind` for themselves
-without the hype. <br />
-B. Needs to learn `Tailwind` 
-as fast as possible
+**A.** Wants to **_evaluate_ `Tailwind`** for themselves
+or their team without the hype/noise. <br />
+**B.** Needs to **learn `Tailwind`**
+as **_fast_ as possible**
 but without skipping any steps! <br />
-C. Has to _summarise_ & _share_ 
+**C.** Has to **_summarise_ & _share_**
 their knowledge of `Tailwind`
 with a team/community of people.
+
+> If you find this repo useful,
+please 
 
 # How? 
 
