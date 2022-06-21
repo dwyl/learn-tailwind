@@ -140,7 +140,7 @@ even in a modest sized project.
 3. **_Actively_ developed** by the original author 
    who is still passionate about the project,
    see: 
-   [What's New in `Tailwind` 3](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
+   [What's New in `Tailwind` v3](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
    where the creator 
    [Adam Wathan](https://adamwathan.me) 
    summarises recent improvements.
@@ -355,11 +355,11 @@ on your computer
 with the following contents:
 https://raw.githubusercontent.com/tailwindtoolbox/Admin-Template/master/index.html
 
-Open the file in your web brower, you should see:
+Open the file in your web brower, 
+you should see 
+something similar to:
 
-
-
-
+![admin-dashboard-example](https://user-images.githubusercontent.com/194400/174831515-304859e9-416a-4af2-8268-2c1900b62891.png)
 
 > **Note**: this is using the `Tailwind.js` library from the **CDN**.
 > This is fine small demos but is not recommended for production.
