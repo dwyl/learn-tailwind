@@ -509,6 +509,18 @@ in your web browser:
 Those semantic utility class names should give you a _flavour_
 for what to expect in the UI. 
 
+Fix the failing tests!
+
+Open `test/app_web/controllers/page_controller_test.exs`
+and change the assertion from:
+```elixir
+assert html_response(conn, 200) =~ "Welcome to Phoenix!"
+```
+
+to:
+```elixir
+assert html_response(conn, 200) =~ "Hello TailWorld!"
+```
 
 ### More Detailed Example!
 
