@@ -359,17 +359,14 @@ Open the file in your web brower,
 you should see 
 something similar to:
 
-![admin-dashboard-example](https://user-images.githubusercontent.com/194400/174831515-304859e9-416a-4af2-8268-2c1900b62891.png)
-
-> **Note**: this is using the `Tailwind.js` library from the **CDN**.
-> This is fine small demos but is not recommended for production.
+![admin-dashboard-example](https://user-images.githubusercontent.com/194400/174832000-4ac4e3ee-9e76-4fcc-80d7-6a8cdb72aa8b.png)
 
 Once you've made a few changes 
 in the `index.html` file
 and seen the results
 in your web browser,
 you should have a decent idea 
-
+of the power of `Tailwind`.
 
 
 <br />
