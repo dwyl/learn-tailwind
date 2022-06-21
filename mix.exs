@@ -55,6 +55,9 @@ defmodule App.MixProject do
 
       # Check test coverage: hex.pm/packages/excoveralls
       {:excoveralls, "~> 0.14.5", only: :test},
+
+      # The ⭐ of the show! hex.pm/packages/tailwind
+      {:tailwind, "~> 0.1.6", runtime: Mix.env() == :dev},
     ]
   end
 

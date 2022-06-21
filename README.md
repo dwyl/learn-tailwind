@@ -36,6 +36,7 @@ Use these links to skip stright to the section that interests you:
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
     - [Create `index.html`](#create-indexhtml)
   - [Part 2: `Tailwind` in `Phoenix`](#part-2-tailwind-in-phoenix)
+    - [Build Log (How we got here)](#build-log-how-we-got-here)
 
 # Why?
 
@@ -46,7 +47,7 @@ difficult.
 ![family-guy-css-meme](https://user-images.githubusercontent.com/194400/174753363-aa63871c-97a0-456f-a24c-0c8c1b834602.gif)
 
 > Plenty of memes:
-> https://www.google.com/search?q=css+meme&tbm=isch
+> [google.com/search?q=**css+meme**](https://www.google.com/search?q=css+meme&tbm=isch)
 
 We think _everyone_ building web apps/sites
 should **learn `CSS`**. <br />
@@ -143,13 +144,21 @@ even in a modest sized project.
    where the creator 
    [Adam Wathan](https://adamwathan.me) 
    summarises recent improvements.
-4. **_Thriving_ community** with _many_ contributors 
+4. **_Superb_ visual documentation** with easy two-way search;
+   lookup the `CSS` attirbute or `Tailwind` class with auto-completion
+   makes finding what you need _very_ fast!
+5. **_Thriving_ community** with _many_ contributors 
    and frequent improvements, 
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-5. **UI Library** [not free but very reasonably priced!]
+6. **UI Library** [not free but very reasonably priced!]
    which means there is a **_sustainable_ business model** 
    i.e: it wont cease to be maintained
    because the creator is getting paid to do it full-time.
+7. **Free _complete_ themes, UI components/kits & resources**
+   to kick-start your project.
+   see:
+   [tailwindtoolbox.com](https://www.tailwindtoolbox.com)
+   ![tailwindtoolbox](https://user-images.githubusercontent.com/194400/174825181-04c74957-4f69-4c9f-9290-d297051eeee5.png)
 
 ## `!important` `Tailwind` Eliminates the "Cascade"
 
@@ -255,10 +264,10 @@ and we have not been disapointed.
 ## `Tailwind` in `Phoenix`
 
 There are already _official_ instructions 
-in the **`Tailwind` docs** for including it in **`Phoenix`**:
+in the **`Tailwind` docs** for **`Phoenix`**:
 [tailwindcss.com/docs/guides/**phoenix**](https://tailwindcss.com/docs/guides/phoenix)
 
-It looks likely **`Tailwind`** will be _included_
+We strongly suspect **`Tailwind`** will be _included_
 in a **_future_ `Phoenix` release** ... 🔮 <br />
 
 At this point **`2022-06-21`** it is _speculation_,
@@ -286,6 +295,11 @@ the _current_ default `CSS` library
 was 
 [last updated **2 years** ago ...](https://github.com/dwyl/technology-stack/issues/94#issue-1261227465)
 _suggests_ that it will be replaced at some point.
+
+Even if **`Tailwind`** 
+does not become the `default` library
+for `CSS` in `Phoenix`,
+it's still going to be ours. 💭
 
 <br />
 
@@ -339,12 +353,23 @@ if you just want to _evaluate_ it.
 Create an `index.html` file 
 on your computer 
 with the following contents:
+https://raw.githubusercontent.com/tailwindtoolbox/Admin-Template/master/index.html
 
-```html
+Open the file in your web brower, you should see:
 
-```
 
-> **Note**: 
+
+
+
+> **Note**: this is using the `Tailwind.js` library from the **CDN**.
+> This is fine small demos but is not recommended for production.
+
+Once you've made a few changes 
+in the `index.html` file
+and seen the results
+in your web browser,
+you should have a decent idea 
+
 
 
 <br />
@@ -358,11 +383,13 @@ run:
 ```sh
 git clone git@github.com:dwyl/learn-tailwind.git && cd learn-tailwind
 mix setup
-mix 
+mix phx.server
 ```
 
 
-### Build Log
+
+
+### Build Log (How we got here)
 
 
 Create a _barebones_ Phoenix App:
@@ -398,6 +425,21 @@ You should see something similar to the following
 (default `Phoenix` homepage):
 
 ![phoenix-default-homepage](https://user-images.githubusercontent.com/194400/174807257-34120dc5-723e-4b2c-9e8e-4b6f3aefca14.png)
+
+That's nice. But a bit 
+[boring ...](https://www.google.com/search?q=boring+meme&source=lnms) 
+let's add some pizzazz! ✨ 
+
+Open the `mix.exs` file and add `:tailwind` to `defp deps`: 
+
+```elixir
+{:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
+```
+
+Run:
+```sh
+mix deps.get
+```
 
 
 
