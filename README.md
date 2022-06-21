@@ -2,7 +2,8 @@
 
 ![tailwind-css-logo](https://user-images.githubusercontent.com/194400/174442927-3476e0a5-eca7-43fd-b68c-5a3f3248e1f8.svg)
 
-Learn how to use **`Tailwind CSS`** 
+Learn 
+**`Tailwind CSS`** 
 to craft 
 **pixel-perfect**
 beautifully adaptive 
@@ -11,6 +12,7 @@ in less time.
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/learn-tailwind/Elixir%20CI?label=build&style=flat-square)](https://github.com/dwyl/learn-tailwind/actions/workflows/ci.yml)
 [![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tailwind/main.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-tailwind?branch=main)
+[![npm package version](https://img.shields.io/npm/v/tailwindcss.svg?style=flat-square)](https://www.npmjs.com/package/tailwindcss)
 [![Hex.pm](https://img.shields.io/hexpm/v/phoenix?color=brightgreen&style=flat-square)](https://hex.pm/packages/phoenix)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tailwind/issues)
 [![HitCount](http://hits.dwyl.com/dwyl/learn-tailwind.svg)](http://hits.dwyl.com/dwyl/learn-tailwind)
@@ -19,9 +21,12 @@ in less time.
 </div>
 <br />
 
+Use these links to skip stright to the section that interests you:
+
 - [Why?](#why)
   - [Why _switch_ to `Tailwind`?](#why-switch-to-tailwind)
 - [What?](#what)
+  - [Key Advantages of **`Tailwind`**](#key-advantages-of-tailwind)
   - [`!important` `Tailwind` Eliminates the "Cascade"](#important-tailwind-eliminates-the-cascade)
   - [What about `Tachyons`?](#what-about-tachyons)
   - [What about `XYZ` Framework?](#what-about-xyz-framework)
@@ -31,7 +36,6 @@ in less time.
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
     - [Create `index.html`](#create-indexhtml)
   - [Part 2: `Tailwind` in `Phoenix`](#part-2-tailwind-in-phoenix)
-
 
 # Why?
 
@@ -110,7 +114,7 @@ directly in your markup. ~
 > Read through their landing page,
 > it summarises the benefits very well.
 
-It lets you **in-line styles** 
+**In-line styles** 
 directly in a UI element
 so you never have to hunt 
 for a style definition across multiple files.
@@ -119,10 +123,10 @@ the change-one thing
 breaks many others pain
 of traditional `CSS`.
 
-This is a **_huge_ time saver** in even a modest sized project.
+This is a **_huge_ time saver** 
+even in a modest sized project.
 
-
-## Key Advantages of **`Tailwind`**
+## Key Advantages of **`Tailwind`**
 
 1. **_Declarative_ utility focussed `CSS`** classes
    that allow you to **_locally_ scope** 
@@ -144,7 +148,8 @@ This is a **_huge_ time saver** in even a modest sized project.
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 5. **UI Library** [not free but very reasonably priced!]
    which means there is a **_sustainable_ business model** 
-   i.e. it wont cease to be maintained
+   i.e: it wont cease to be maintained
+   because the creator is getting paid to do it full-time.
 
 ## `!important` `Tailwind` Eliminates the "Cascade"
 
@@ -152,7 +157,7 @@ One of the most amazing and powerful features
 of `CSS` 
 (["**_Cascading_ Style Sheets**"](https://en.wikipedia.org/wiki/CSS))
 is also one of the greatest sources 
-of _frustration_ when using it in _practice.
+of _frustration_ when using it in _practice_.
 When you have a "cascade",
 styles can be applied globally 
 to your web site/app
@@ -200,15 +205,18 @@ you **don't want** to have
 build pipeline/process_)
 whereas `Tailwind` is a `JavaScript` library
 that includs parser/pre-processor.
-The advantage of having a `JS` library
+
+The _advantage_ of having a `JS` library
 means you can create your own
 [Functions, Components and Directives](https://tailwindcss.com/docs/functions-and-directives)
 that are immensely powerful 
 and offer significant flexibility.
+
 `JS` means you are _forced_ 
 to have a build step in your dev/deployment pipeline
 to use `Tailwind`.
-However, given that `Tailwind` works with **`esbuild`** 
+However, given that `Tailwind` works with 
+[**`esbuild`**](https://esbuild.github.io/)
 (_which is **very fast** and reliable 
 and already **included with `Phoenix`**_)
 we feel that the trade-off is worth it. 
@@ -223,20 +231,25 @@ of a customizable design system.
 
 There is a **virtually _endless_ list**
 of **`CSS` frameworks**, 
-component libraries and pre-processors available.
+component libraries and pre-processors available. <br />
 see: 
 [github.com/troxler/**awesome-css-frameworks**](https://github.com/troxler/awesome-css-frameworks) 
-...
+... <br />
 For a good _comparison_
 read:
 [athemes.com/collections/**best-css-frameworks**](https://athemes.com/collections/best-css-frameworks/)
 or
 [dev.to/samlan/**best-css-frameworks-for-2022**-1afm](https://dev.to/samlan/best-css-frameworks-for-2022-1afm)
-Ultimately for us, 
-we were 
+
+Ultimately for _us_, 
+we did our own research into the available alternatives
+but kept an open mind.
+We were 
 [_guided_](https://github.com/dwyl/technology-stack/issues/94) 
 by the 
-**`Elixir` / `Phoenix` community** toward `Tailwind`.
+**`Elixir` / `Phoenix` community** toward **`Tailwind`**
+and we have not been disapointed.
+
 
 
 ## `Tailwind` in `Phoenix`
@@ -291,8 +304,10 @@ but without skipping any steps! <br />
 their knowledge of `Tailwind`
 with a team/community of people.
 
-> If you find this repo useful,
-please 
+> If you find this useful,
+please ⭐ on GitHub
+to let us and others know. 
+Thanks! 🙏
 
 # How? 
 
@@ -336,9 +351,35 @@ with the following contents:
 
 ## Part 2: `Tailwind` in `Phoenix`
 
+To run the _finished_ version of our 
+**`Tailwind` + `Phoenix` _Demo_**,
+run:
+
+```sh
+
+```
+
+
+### Build Log
+
+
+Create a _barebones_ Phoenix App:
+```sh
+mix phx.new app --no-mailer --no-dashboard --no-gettext --no-ecto
+```
+
+Install the dependencies.
+Then open the project in your editor.
 
 
 If you just want to learn `Tailwind` without `Phoenix`,
+
+```
+
+```
+
+
+Visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 
 
