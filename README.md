@@ -356,7 +356,9 @@ To run the _finished_ version of our
 run:
 
 ```sh
-
+git clone git@github.com:dwyl/learn-tailwind.git && cd learn-tailwind
+mix setup
+mix 
 ```
 
 
@@ -371,17 +373,31 @@ mix phx.new app --no-mailer --no-dashboard --no-gettext --no-ecto
 Install the dependencies.
 Then open the project in your editor.
 
-
-If you just want to learn `Tailwind` without `Phoenix`,
-
+Run the app:
+```
+mix phx.server
 ```
 
+You should see output similar to the following in your terminal:
+```sh
+Generated app app
+[info] Running AppWeb.Endpoint with cowboy 2.9.0 at 127.0.0.1:4000 (http)
+[info] Access AppWeb.Endpoint at http://localhost:4000
+[debug] Downloading esbuild from https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.14.29.tgz
+[watch] build finished, watching for changes...
 ```
 
+That's a good sign, `esbuild` was downloaded
+and the assets were compiled successfully.
 
-Visit [`localhost:4000`](http://localhost:4000) from your browser.
+Visit 
+[`localhost:4000`](http://localhost:4000) 
+from your browser.
 
+You should see something similar to the following 
+(default `Phoenix` homepage):
 
+![phoenix-default-homepage](https://user-images.githubusercontent.com/194400/174807257-34120dc5-723e-4b2c-9e8e-4b6f3aefca14.png)
 
 
 
