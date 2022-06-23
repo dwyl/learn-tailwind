@@ -24,7 +24,7 @@ in less time.
 Use these links to skip stright to the section that interests you:
 
 - [Why?](#why)
-  - [Why _switch_ to `Tailwind`?](#why-switch-to-tailwind)
+  - [Why _Switch_ to `Tailwind`?](#why-switch-to-tailwind)
 - [What?](#what)
   - [Key Advantages of **`Tailwind`**](#key-advantages-of-tailwind)
   - [`!important` `Tailwind` Eliminates the "Cascade"](#important-tailwind-eliminates-the-cascade)
@@ -87,15 +87,17 @@ to learn/understand it.
 
 
 
-## Why _switch_ to `Tailwind`? 
+## Why _Switch_ to `Tailwind`? 
 
-We have not taken the decision to "switch"
+We have not taken the decision to _switch_
 our UI library _lightly_.
-As with all technology decisions,
+As with all 
+[technology decisions](https://github.com/dwyl/technology-stack),
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
 
-We feel that the benefits of switching
+We felt (still feel) 
+that the benefits of switching
 (outlined below)
 justify the cost -
 learning time, updating code & maintenance.
@@ -113,7 +115,7 @@ that can be composed to build any design,
 directly in your markup. ~
 [**tailwindcss.com**](https://tailwindcss.com/)
 
-> Read through their landing page,
+> 💡 **Tip**: Read through the **`Tailwind` landing page**,
 > it summarises the benefits very well.
 
 **In-line styles** 
@@ -134,28 +136,39 @@ even in a modest sized project.
    that allow you to **_locally_ scope** 
    all presentation
    and avoid polluting the _global_ space.
-2. **Built-in pre-processor bundles** 
+2. **_Flexible_ function-like class names** 
+   let you define _precise_ values for attributes 
+   like `position`, `padding`, `margin` 
+   e.g: `m-[5px]` or `m-[2%]` 
+   when you need a very specific pixel dimension 
+   or a specific percentage.
+   see: 
+   [tailwindcss.com/docs/margin#**arbitrary-values**](https://tailwindcss.com/docs/margin#arbitrary-values)
+   This is a _huge_ improvement over being stuck with pre-defined values!
+3. **_Superb_ visual documentation** with easy two-way search;
+   lookup the `CSS` attirbute or `Tailwind` class with auto-completion
+   makes finding what you need _very_ fast!
+4. **Built-in pre-processor bundles** 
    and **_minimises_ your styles**
    so you never ship bloated `CSS` again; 
    _especially_ important for larger projects.
-3. **_Actively_ developed** by the original author 
-   who is still passionate about the project,
+5. **_Actively_ developed** by the original author 
+   who is 
+   [working _full_-time](https://adamwathan.me/going-full-time-on-tailwind-css/)
+   and still passionate about the project,
    see: 
-   [What's New in `Tailwind` v3](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
+   [What's New in `Tailwind` v3.1](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
    where the creator 
    [Adam Wathan](https://adamwathan.me) 
    summarises recent improvements.
-4. **_Superb_ visual documentation** with easy two-way search;
-   lookup the `CSS` attirbute or `Tailwind` class with auto-completion
-   makes finding what you need _very_ fast!
-5. **_Thriving_ community** with _many_ contributors 
+6. **_Thriving_ community** with _many_ contributors 
    and frequent improvements, 
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-6. **UI Library** [not free but very reasonably priced!]
+7. **UI Library** [not free but very reasonably priced!]
    which means there is a **_sustainable_ business model** 
    i.e: it wont cease to be maintained
    because the creator is getting paid to do it full-time.
-7. **Free _complete_ themes, UI components/kits & resources**
+8. **Free _complete_ themes, UI components/kits & resources**
    to kick-start your project.
    see:
    [tailwindtoolbox.com](https://www.tailwindtoolbox.com)
@@ -204,19 +217,31 @@ _comprehensively_
 documented our learning in
 [dwyl/**learn-tachyons**](https://github.com/dwyl/learn-tachyons)
 and 
-[dwyl/**tachyons-bootstrap**](https://github.com/dwyl/tachyons-bootstrap).
-We still ❤️ it and will use it where it makes sense.
-`Taychons` is lightweight (**`14kb`**)
-and has _similar_ utility classes to `Tailwind`.
+[dwyl/**tachyons-bootstrap**](https://github.com/dwyl/tachyons-bootstrap). <br />
+**`Tachyons`** preceeds **`Tailwind`**
+by 3 years - inital release 2014 vs. 2017 -
+so you could even say that one _inspired_ 
+or layed the 
+[groundwork](https://en.wiktionary.org/wiki/lay_the_groundwork) 
+for the other. 
+We still ❤️ `Tachyons` and will use it where it makes sense.
+**`Tachyons`** is lightweight (**`14kb`**)
+and has **_very similar_ utility classes** to **`Tailwind`**;
+we consider the two **_almost_ interchangeable**.
+We won't be updating any of the projects that use **`Tachyons`**
+to use **`Tailwind`** because none of them are "broken",
+require zero maintenance and work well as-is!
 
-The key diference is `Tachyons` is _just_ the `CSS` 
+The key diference is 
+approach taken to building the library.
+`Tachyons` is _just_ the `CSS` 
 (_which is great for anywhere 
 you **don't want** to have 
 build pipeline/process_)
 whereas `Tailwind` is a `JavaScript` library
-that includs parser/pre-processor.
+that includes parser/pre-processor.
 
-The _advantage_ of having a `JS` library
+The _advantage_ of having a **`JS` library**
 means you can create your own
 [Functions, Components and Directives](https://tailwindcss.com/docs/functions-and-directives)
 that are immensely powerful 
@@ -231,10 +256,11 @@ However, given that `Tailwind` works with
 and already **included with `Phoenix`**_)
 we feel that the trade-off is worth it. 
 
-With `Tailwind` we get the "best of both worlds",
+With **`Tailwind`** we get the 
+["best of both worlds"](https://dictionary.cambridge.org/dictionary/english/best-of-both-worlds),
 we get a utility-first CSS library,
 that also has the flexibility/power 
-of a customizable design system.
+of a **_customizable_ design system**.
 
 
 ## What about `XYZ` Framework?
@@ -369,6 +395,19 @@ in your web browser,
 you should have a decent idea 
 of the power of `Tailwind`.
 
+
+If you have a decent Internet connection
+and no bandwidth constraints,
+we recommend watching
+Designing with Tailwind CSS: The Utility-First Workflow:
+[https://youtu.be/Ybybd3GCNn4](https://www.youtube.com/watch?v=Ybybd3GCNn4&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=2)
+
+[![Designing with Tailwind CSS](https://user-images.githubusercontent.com/194400/175198147-10656a1b-53e2-4061-b1f1-d27bc32dee08.png)](https://www.youtube.com/watch?v=Ybybd3GCNn4&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=2)
+
+made by
+[Adam Wathan](https://adamwathan.me/) 
+[**`@adamwathan`**](https://github.com/adamwathan)
+(Creator of Tailwind)
 
 <br />
 
