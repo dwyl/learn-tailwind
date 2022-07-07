@@ -1,3 +1,92 @@
-<h1 class="text-7xl text-white font-bold text-center width-full bg-slate-800 rounded-xl shadow-lg py-3 mt-3 ml-3">
+<h1 class="text-7xl text-white font-bold text-center width-full 
+  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 
+  rounded-xl shadow-lg py-3 mt-3 ml-3">
   Hello TailWorld!
 </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js" defer></script>
+		<!-- kudos to: https://gist.github.com/shritesh/5629a28a0b9f1e8c31ea11912100fb1f -->
+		<!-- Container element scopes the x-data object -->
+		<div x-data="{
+			interval: 0,
+			now: 0,
+			start: 0, 
+			stop: 0
+		}">
+
+		<!-- Timer display -->
+		<div x-text="timer_text(start, now || stop)"
+		class="text-6xl text-center py-6 font-mono"
+		></div>
+
+		<!-- Control buttons -->
+		<div class="grid content-center grid-cols-2 py-3 w-2/3 ml-[16%] font-bold">
+			<button 
+			x-show="!interval && !stop" 
+			class="bg-green-600 text-white px-4 py-2 rounded-xl ml-2 w-full"
+			@click="
+				start = Date.now();
+				stop = 0;
+				interval = setInterval(() => { now = Date.now() }, 10)
+			">Start</button>
+
+		<button x-show="interval" 
+		class="bg-orange-600 text-white px-4 py-2 rounded-xl"
+		@click="
+			clearInterval(interval);
+			stop = Date.now();
+			interval = 0;
+			now = 0;
+		">Stop</button>
+
+		<button x-show="stop" 
+		class="bg-green-600 text-white px-4 py-2 rounded-xl"
+		@click="
+			start = Date.now() - (stop - start);
+			stop = 0;
+			interval = setInterval(() => { now = Date.now() }, 10)
+		">Continue</button>
+
+		<button x-show="stop" 
+		class="bg-red-600 text-white px-4 py-2 rounded-xl"
+		@click="
+		  start=0;
+			stop=0;
+		">Reset</button>
+		</div>
+		</div>
+
+<script>
+	// https://www.theregister.com/2016/03/23/npm_left_pad_chaos/
+	function leftPad(val) {
+		return val < 10 ? '0' + String(val) : val;
+	}
+
+	function timer_text(start, current) {
+		let h="00", m="00", ms="00", s="00";
+		const diff = current - start;
+		// milliseconds
+		if(diff > 10) {
+			ms = Math.floor((diff % 1000) / 10);
+			ms = leftPad(ms);
+		}
+		// seconds
+		if(diff > 1000) {
+			s = Math.floor(diff / 1000);
+			s = s > 60 ? s % 60 : s;
+			s = leftPad(s);
+		}
+		// minutes
+		if(diff > 60000) {
+			m = Math.floor(diff/60000);
+			m = m > 60 ? m % 60 : leftPad(m);
+		}
+		// hours
+		if(diff > 3600000) {
+			h = Math.floor(diff/3600000);
+			h = leftPad(h)
+		}
+
+		return h + ':' + m + ':' + s + ':' + ms;
+	}
+</script>
