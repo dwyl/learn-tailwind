@@ -134,11 +134,11 @@ even in a modest sized project.
    and avoid polluting the _global_ space.
 2. **_Logical_ numeric property increments**
    mean it's **_immediately_ obvious** from reading
-   the **`class`** **`bg-red-500`** in your **`HTML`**
+   the **`class`** **`bg-red-500`** `#ef4444` in your **`HTML`**
    that the background is red and the intensity is **`500`**  
    (on the scale 0-1000) 
    and therefore _logically_ the "hover background red 700"
-   **`hover:bg-red-700`**
+   **`hover:bg-red-700`** `#b91c1c`
    is a deeper red.
    See: [Colors](#colors) section below.
 3. **_Flexible_ function-like class names**
@@ -155,8 +155,10 @@ even in a modest sized project.
    ![tailwind-gradient-demo](https://user-images.githubusercontent.com/194400/179341516-111598ad-4f26-4651-a70d-db57f0bcb601.png) <br />
    Even a complete beginner can _infer_ 
    what these 3 classes are doing; 
-   "Background gradient to right, from green 400 intensity, to blue 500 intensity". <br />
-   Obvs, we don't do this in practice, but it shows the power! 🌈
+   "_Background gradient to right, 
+   from green 400 intensity_ `#4ade80`, 
+   _to blue 500 intensity_ `#0ea5e9`". <br />
+   > **Note**: Obvs we don't do this in _practice_, but it shows the power! 🌈
 4. **_Superb_ visual documentation** with easy two-way search;
    lookup the `CSS` attirbute or `Tailwind` class 
    with _auto-completion_
