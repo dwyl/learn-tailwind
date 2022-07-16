@@ -150,11 +150,13 @@ even in a modest sized project.
    see:
    [tailwindcss.com/docs/margin#**arbitrary-values**](https://tailwindcss.com/docs/margin#arbitrary-values)
    This is a _huge_ improvement over being stuck with pre-defined values!
-   Consider this compound class to create a gradient:
-   `bg-gradient-to-r from-green-400 to-blue-500`
-   ![tailwind-gradient-demo](https://user-images.githubusercontent.com/194400/179341516-111598ad-4f26-4651-a70d-db57f0bcb601.png)
+   Consider this compound class to create a gradient: <br />
+   `bg-gradient-to-r from-green-400 to-blue-500`<br />
+   ![tailwind-gradient-demo](https://user-images.githubusercontent.com/194400/179341516-111598ad-4f26-4651-a70d-db57f0bcb601.png) <br />
    Even a complete beginner can _infer_ 
-   what these 3 classes are doing. 
+   what these 3 classes are doing; 
+   "Background gradient to right, from green 400 intensity, to blue 500 intensity". <br />
+   Obvs, we don't do this in practice, but it shows the power! 🌈
 4. **_Superb_ visual documentation** with easy two-way search;
    lookup the `CSS` attirbute or `Tailwind` class 
    with _auto-completion_
