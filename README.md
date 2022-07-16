@@ -154,10 +154,10 @@ even in a modest sized project.
    `bg-gradient-to-r from-green-400 to-blue-500`<br />
    ![tailwind-gradient-demo](https://user-images.githubusercontent.com/194400/179341516-111598ad-4f26-4651-a70d-db57f0bcb601.png) <br />
    Even a complete beginner can _infer_ 
-   what these 3 classes are doing; 
-   "_Background gradient to right, 
-   from green 400 intensity_ `#4ade80`, 
-   _to blue 500 intensity_ `#0ea5e9`". <br />
+   what these 3 classes are doing: <br />
+   "_Background gradient to right,_
+   _from green level 400_ `#4ade80`, 
+   _to blue level 500_ `#0ea5e9`". <br />
    > **Note**: Obvs we don't do this in _practice_, but it shows the power! 🌈
 4. **_Superb_ visual documentation** with easy two-way search;
    lookup the `CSS` attirbute or `Tailwind` class 
@@ -185,7 +185,7 @@ even in a modest sized project.
    because the creator is getting paid to do it full-time.
 9. **Free _complete_ themes, UI components/kits & resources**
    to kick-start your project.
-   see:
+   e.g:
    [tailwindtoolbox.com](https://www.tailwindtoolbox.com)
    ![tailwindtoolbox](https://user-images.githubusercontent.com/194400/174825181-04c74957-4f69-4c9f-9290-d297051eeee5.png)
 10. Please add yours here!! 🙏
@@ -324,7 +324,7 @@ working on an **_official_
 and is _using_ it at his
 ["day job"](https://github.com/dwyl/learn-devops/issues/72#issuecomment-917442712)
 building the
-[Fli.io dashboard](https://github.com/dwyl/technology-stack/issues/87#issuecomment-1161649391),
+[Fly.io dashboard](https://github.com/dwyl/technology-stack/issues/87#issuecomment-1161649391),
 we take this as very good sign.
 
 Also, the fact that
@@ -373,7 +373,9 @@ use the online playground:
 Speed-read through the docs:
 [tailwindcss.com/**docs/utility-first**](https://tailwindcss.com/docs/utility-first)
 and try a changing a few values,
-e.g: start by changing color names.
+e.g: start by changing 
+[solors](#colors)
+names/levels.
 
 ## Part 1: `Try` _Before_ You `Commit`
 
