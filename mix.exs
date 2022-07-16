@@ -70,6 +70,8 @@ defmodule App.MixProject do
   defp aliases do
     [
       c: ["coveralls.html"],
+      s: ["phx.server"],
+      t: ["test"],
       setup: ["deps.get"],
       "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
     ]

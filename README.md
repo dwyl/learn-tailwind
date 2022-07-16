@@ -25,7 +25,7 @@ Use these links to skip stright to the section that interests you:
 - [Why?](#why)
   - [Why _Switch_ to `Tailwind`?](#why-switch-to-tailwind)
 - [What?](#what)
-  - [Key Advantages of **`Tailwind`**](#key-advantages-of-tailwind)
+  - [Top 10 Reasons We _Love_ **`Tailwind`**](#top-10-reasons-we-love-tailwind)
   - [`!important` `Tailwind` Eliminates the "Cascade"](#important-tailwind-eliminates-the-cascade)
   - [What about `Tachyons`?](#what-about-tachyons)
   - [What about `XYZ` Framework?](#what-about-xyz-framework)
@@ -34,6 +34,7 @@ Use these links to skip stright to the section that interests you:
 - [How?](#how)
   - [Part 1: `Try` _Before_ You `Commit`](#part-1-try-before-you-commit)
     - [Create `index.html`](#create-indexhtml)
+  - [Colors!](#colors)
   - [Part 2: `Tailwind` in `Phoenix`](#part-2-tailwind-in-phoenix)
     - [Build Log (How we got here)](#build-log-how-we-got-here)
     - [More Detailed Example!](#more-detailed-example)
@@ -125,13 +126,22 @@ of traditional `CSS`.
 This is a **_huge_ time saver**
 even in a modest sized project.
 
-## Key Advantages of **`Tailwind`**
+## Top 10 Reasons We _Love_ **`Tailwind`**
 
 1. **_Declarative_ utility focussed `CSS`** classes
    that allow you to **_locally_ scope**
    all presentation
    and avoid polluting the _global_ space.
-2. **_Flexible_ function-like class names**
+2. **_Logical_ numeric property increments**
+   mean it's **_immediately_ obvious** from reading
+   the **`class`** **`bg-red-500`** in your **`HTML`**
+   that the background is red and the intensity is **`500`**  
+   (on the scale 0-1000) 
+   and therefore _logically_ the "hover background red 700"
+   **`hover:bg-red-700`**
+   is a deeper red.
+   See: [Colors](#colors) section below.
+3. **_Flexible_ function-like class names**
    let you define _precise_ values for attributes
    like `position`, `padding`, `margin`
    e.g: `m-[5px]` or `m-[2%]`
@@ -140,10 +150,14 @@ even in a modest sized project.
    see:
    [tailwindcss.com/docs/margin#**arbitrary-values**](https://tailwindcss.com/docs/margin#arbitrary-values)
    This is a _huge_ improvement over being stuck with pre-defined values!
-3. **_Logical_ numeric property increments**
-
+   Consider this compound class to create a gradient:
+   `bg-gradient-to-r from-green-400 to-blue-500`
+   ![tailwind-gradient-demo](https://user-images.githubusercontent.com/194400/179341516-111598ad-4f26-4651-a70d-db57f0bcb601.png)
+   Even a complete beginner can _infer_ 
+   what these 3 classes are doing. 
 4. **_Superb_ visual documentation** with easy two-way search;
-   lookup the `CSS` attirbute or `Tailwind` class with auto-completion
+   lookup the `CSS` attirbute or `Tailwind` class 
+   with _auto-completion_
    makes finding what you need _very_ fast!
 5. **Built-in pre-processor bundles**
    and **_minimises_ your styles**
@@ -170,6 +184,7 @@ even in a modest sized project.
    see:
    [tailwindtoolbox.com](https://www.tailwindtoolbox.com)
    ![tailwindtoolbox](https://user-images.githubusercontent.com/194400/174825181-04c74957-4f69-4c9f-9290-d297051eeee5.png)
+10. Please add yours here!! 🙏
 
 ## `!important` `Tailwind` Eliminates the "Cascade"
 
