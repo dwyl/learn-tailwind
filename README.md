@@ -2,11 +2,11 @@
 
 ![tailwind-css-logo](https://user-images.githubusercontent.com/194400/174442927-3476e0a5-eca7-43fd-b68c-5a3f3248e1f8.svg)
 
-Learn 
-**`Tailwind CSS`** 
-to craft 
+Learn
+**`Tailwind CSS`**
+to craft
 **pixel-perfect**
-beautifully adaptive 
+beautifully adaptive
 web apps/sites
 in less time.
 
@@ -16,7 +16,6 @@ in less time.
 [![Hex.pm](https://img.shields.io/hexpm/v/phoenix?color=brightgreen&style=flat-square)](https://hex.pm/packages/phoenix)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tailwind/issues)
 [![HitCount](http://hits.dwyl.com/dwyl/learn-tailwind.svg)](http://hits.dwyl.com/dwyl/learn-tailwind)
-
 
 </div>
 <br />
@@ -41,7 +40,7 @@ Use these links to skip stright to the section that interests you:
 
 # Why?
 
-Many people consider 
+Many people consider
 [`CSS`](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 difficult.
 
@@ -52,51 +51,47 @@ difficult.
 
 We think _everyone_ building web apps/sites
 should **learn `CSS`**. <br />
-However we _agree_ that it can feel frustrating 
+However we _agree_ that it can feel frustrating
 and often overwhelming. <br />
 Many software engineers/developers
 feel they already have _enough_ to learn
-with the rest of their chosen 
+with the rest of their chosen
 ["stack"](https://github.com/dwyl/technology-stack),
-so investing the time 
-to perfect the _interface_ design & layout 
+so investing the time
+to perfect the _interface_ design & layout
 feels like too much.
 We get it!
 
-
-Learning **`Tailwind`** 
-will not mean 
+Learning **`Tailwind`**
+will not mean
 you don't need to learn/understand `CSS`.
-But it will make it 
+But it will make it
 **a _lot_ easier**.
 
-
 > We think the infamy of `CSS` is unjustified.
-Like learning how to 
-[juggle](https://en.wikipedia.org/wiki/Juggling),
-you will get hit in the face 
-by a few stray objects
-in your quest to learn `CSS`.
-If you invest the time 
-to learn `CSS` from first principals,
-you will have the skills
-to avoid the frustration.
+> Like learning how to
+> [juggle](https://en.wikipedia.org/wiki/Juggling),
+> you will get hit in the face
+> by a few stray objects
+> in your quest to learn `CSS`.
+> If you invest the time
+> to learn `CSS` from first principals,
+> you will have the skills
+> to avoid the frustration.
 > As with most things,
-it's usually just a matter of _making_ the time 
-to learn/understand it.
+> it's usually just a matter of _making_ the time
+> to learn/understand it.
 
-
-
-## Why _Switch_ to `Tailwind`? 
+## Why _Switch_ to `Tailwind`?
 
 We have not taken the decision to _switch_
 our UI library _lightly_.
-As with all 
+As with all
 [technology decisions](https://github.com/dwyl/technology-stack),
 we _must_ weigh the pros & cons _carefully_
 because there is a substantial time investment required.
 
-We felt (still feel) 
+We felt (still feel)
 that the benefits of switching
 (outlined below)
 justify the cost -
@@ -104,71 +99,73 @@ learning time, updating code & maintenance.
 
 We encourage you to read through this doc
 and make up your own mind
-if `Tailwind` is a good fit 
+if `Tailwind` is a good fit
 for you and your team/project.
 
 # What?
 
-**`Tailwind` CSS** 
-is a utility-first CSS framework 
-that can be composed to build any design, 
+**`Tailwind` CSS**
+is a utility-first CSS framework
+that can be composed to build any design,
 directly in your markup. ~
 [**tailwindcss.com**](https://tailwindcss.com/)
 
 > 💡 **Tip**: Read through the **`Tailwind` landing page**,
 > it summarises the benefits very well.
 
-**In-line styles** 
+**In-line styles**
 directly in a UI element
-so you never have to hunt 
+so you never have to hunt
 for a style definition across multiple files.
-It means you don't suffer 
-the change-one thing 
+It means you don't suffer
+the change-one thing
 breaks many others pain
 of traditional `CSS`.
 
-This is a **_huge_ time saver** 
+This is a **_huge_ time saver**
 even in a modest sized project.
 
 ## Key Advantages of **`Tailwind`**
 
 1. **_Declarative_ utility focussed `CSS`** classes
-   that allow you to **_locally_ scope** 
+   that allow you to **_locally_ scope**
    all presentation
    and avoid polluting the _global_ space.
-2. **_Flexible_ function-like class names** 
-   let you define _precise_ values for attributes 
-   like `position`, `padding`, `margin` 
-   e.g: `m-[5px]` or `m-[2%]` 
-   when you need a very specific pixel dimension 
+2. **_Flexible_ function-like class names**
+   let you define _precise_ values for attributes
+   like `position`, `padding`, `margin`
+   e.g: `m-[5px]` or `m-[2%]`
+   when you need a very specific pixel dimension
    or a specific percentage.
-   see: 
+   see:
    [tailwindcss.com/docs/margin#**arbitrary-values**](https://tailwindcss.com/docs/margin#arbitrary-values)
    This is a _huge_ improvement over being stuck with pre-defined values!
-3. **_Superb_ visual documentation** with easy two-way search;
+3. **_Logical_ numeric property increments**
+
+4. **_Superb_ visual documentation** with easy two-way search;
    lookup the `CSS` attirbute or `Tailwind` class with auto-completion
    makes finding what you need _very_ fast!
-4. **Built-in pre-processor bundles** 
+5. **Built-in pre-processor bundles**
    and **_minimises_ your styles**
-   so you never ship bloated `CSS` again; 
+   so you never ship bloated `CSS` again;
    _especially_ important for larger projects.
-5. **_Actively_ developed** by the original author 
-   who is 
+6. **_Actively_ developed** by the original author
+   who is
    [working _full_-time](https://adamwathan.me/going-full-time-on-tailwind-css/)
    and still passionate about the project,
-   see: 
+   see:
    [What's New in `Tailwind` v3.1](https://www.youtube.com/watch?v=nOQyWbPO2Ds&t=137s&ab_channel=TailwindLabs)
-   where the creator 
-   [Adam Wathan](https://adamwathan.me) 
+   where the creator
+   [Adam Wathan](https://adamwathan.me)
    summarises recent improvements.
-6. **_Thriving_ community** with _many_ contributors 
-   and frequent improvements, 
+7. **_Thriving_ community** with _many_ contributors
+   and frequent improvements,
    see: [github.com/tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-7. **UI Library** [not free but very reasonably priced!]
-   which means there is a **_sustainable_ business model** 
+8. **UI Library** [not free but very reasonably priced!]
+   which means there is a **_sustainable_ business model**
    i.e: it wont cease to be maintained
    because the creator is getting paid to do it full-time.
-8. **Free _complete_ themes, UI components/kits & resources**
+9. **Free _complete_ themes, UI components/kits & resources**
    to kick-start your project.
    see:
    [tailwindtoolbox.com](https://www.tailwindtoolbox.com)
@@ -176,27 +173,27 @@ even in a modest sized project.
 
 ## `!important` `Tailwind` Eliminates the "Cascade"
 
-One of the most amazing and powerful features 
-of `CSS` 
+One of the most amazing and powerful features
+of `CSS`
 (["**_Cascading_ Style Sheets**"](https://en.wikipedia.org/wiki/CSS))
-is also one of the greatest sources 
+is also one of the greatest sources
 of _frustration_ when using it in _practice_.
 When you have a "cascade",
-styles can be applied globally 
+styles can be applied globally
 to your web site/app
-and thus you only have to change 
+and thus you only have to change
 things in one place
 for them to take effect _everwhere_.
-In practice this only works when 
-everyone editing the `CSS` 
-is reasonably proficient 
+In practice this only works when
+everyone editing the `CSS`
+is reasonably proficient
 and there is a clear _system_
 for making the changes.
 
 When all styles are **_globally_ scoped**,
 making fine adjustments to the position
 of a particular UI element becomes tedious
-which leads to spagheti code 
+which leads to spagheti code
 full of specificity headaches.
 If you see the word
 [**`!important`**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
@@ -204,26 +201,25 @@ in `CSS` you know that
 people have given up
 on the _maintainability_.
 
-
 ## What about `Tachyons`?
 
 [**`@dwyl`**](https://github.com/dwyl/learn-tachyons/issues/1)
-we've been using 
+we've been using
 [**`Taychyons`**](https://github.com/tachyons-css/tachyons/#docs)
 (Functional CSS Library)
 for the past **5 years**
-and (as always) 
+and (as always)
 _comprehensively_
 documented our learning in
 [dwyl/**learn-tachyons**](https://github.com/dwyl/learn-tachyons)
-and 
+and
 [dwyl/**tachyons-bootstrap**](https://github.com/dwyl/tachyons-bootstrap). <br />
 **`Tachyons`** preceeds **`Tailwind`**
 by 3 years - inital release 2014 vs. 2017 -
-so you could even say that one _inspired_ 
-or layed the 
-[groundwork](https://en.wiktionary.org/wiki/lay_the_groundwork) 
-for the other. 
+so you could even say that one _inspired_
+or layed the
+[groundwork](https://en.wiktionary.org/wiki/lay_the_groundwork)
+for the other.
 We still ❤️ `Tachyons` and will use it where it makes sense.
 **`Tachyons`** is lightweight (**`14kb`**)
 and has **_very similar_ utility classes** to **`Tailwind`**;
@@ -232,11 +228,11 @@ We won't be updating any of the projects that use **`Tachyons`**
 to use **`Tailwind`** because none of them are "broken",
 require zero maintenance and work well as-is!
 
-The key diference is 
+The key diference is
 approach taken to building the library.
-`Tachyons` is _just_ the `CSS` 
-(_which is great for anywhere 
-you **don't want** to have 
+`Tachyons` is _just_ the `CSS`
+(_which is great for anywhere
+you **don't want** to have
 build pipeline/process_)
 whereas `Tailwind` is a `JavaScript` library
 that includes parser/pre-processor.
@@ -244,32 +240,31 @@ that includes parser/pre-processor.
 The _advantage_ of having a **`JS` library**
 means you can create your own
 [Functions, Components and Directives](https://tailwindcss.com/docs/functions-and-directives)
-that are immensely powerful 
+that are immensely powerful
 and offer significant flexibility.
 
-`JS` means you are _forced_ 
+`JS` means you are _forced_
 to have a build step in your dev/deployment pipeline
 to use `Tailwind`.
-However, given that `Tailwind` works with 
+However, given that `Tailwind` works with
 [**`esbuild`**](https://esbuild.github.io/)
-(_which is **very fast** and reliable 
+(_which is **very fast** and reliable
 and already **included with `Phoenix`**_)
-we feel that the trade-off is worth it. 
+we feel that the trade-off is worth it.
 
-With **`Tailwind`** we get the 
+With **`Tailwind`** we get the
 ["best of both worlds"](https://dictionary.cambridge.org/dictionary/english/best-of-both-worlds),
 we get a utility-first CSS library,
-that also has the flexibility/power 
+that also has the flexibility/power
 of a **_customizable_ design system**.
-
 
 ## What about `XYZ` Framework?
 
 There is a **virtually _endless_ list**
-of **`CSS` frameworks**, 
+of **`CSS` frameworks**,
 component libraries and pre-processors available. <br />
-see: 
-[github.com/troxler/**awesome-css-frameworks**](https://github.com/troxler/awesome-css-frameworks) 
+see:
+[github.com/troxler/**awesome-css-frameworks**](https://github.com/troxler/awesome-css-frameworks)
 ... <br />
 For a good _comparison_
 read:
@@ -277,20 +272,18 @@ read:
 or
 [dev.to/samlan/**best-css-frameworks-for-2022**-1afm](https://dev.to/samlan/best-css-frameworks-for-2022-1afm)
 
-Ultimately for _us_, 
+Ultimately for _us_,
 we did our own research into the available alternatives
 but kept an open mind.
-We were 
-[_guided_](https://github.com/dwyl/technology-stack/issues/94) 
-by the 
+We were
+[_guided_](https://github.com/dwyl/technology-stack/issues/94)
+by the
 **`Elixir` / `Phoenix` community** toward **`Tailwind`**
 and we have not been disapointed.
 
-
-
 ## `Tailwind` in `Phoenix`
 
-There are already _official_ instructions 
+There are already _official_ instructions
 in the **`Tailwind` docs** for **`Phoenix`**:
 [tailwindcss.com/docs/guides/**phoenix**](https://tailwindcss.com/docs/guides/phoenix)
 
@@ -298,38 +291,37 @@ We strongly suspect **`Tailwind`** will be _included_
 in a **_future_ `Phoenix` release** ... 🔮 <br />
 
 At this point **`2022-06-21`** it is _speculation_,
-because there is no 
+because there is no
 [**`public` roadmap**](https://github.com/dwyl/product-roadmap)
 for **`Phoenix`**. 🤷‍♀️ <br />
-However given that 
+However given that
 [**Chris McCord**](https://github.com/chrismccord)
-_creator_ of 
+_creator_ of
 [**`Phoenix`**](https://www.phoenixframework.org/)
 is _actively_
 working on an **_official_
 `Tailwind` package** for **`Phoenix`**:
 [github.com/**phoenixframework/tailwind**](https://github.com/phoenixframework/tailwind)
-and is _using_ it at his 
+and is _using_ it at his
 ["day job"](https://github.com/dwyl/learn-devops/issues/72#issuecomment-917442712)
-building the 
+building the
 [Fli.io dashboard](https://github.com/dwyl/technology-stack/issues/87#issuecomment-1161649391),
 we take this as very good sign.
 
-Also, the fact that 
+Also, the fact that
 [Milligram](https://github.com/milligram/milligram),
 the _current_ default `CSS` library
 [included with `Phoenix@1.6.x`](https://github.com/phoenixframework/phoenix/blob/e0991bb3eea1fd397a898bc2640e3efd72b065c0/installer/templates/phx_static/phoenix.css#L5)
-was 
+was
 [last updated **2 years** ago ...](https://github.com/dwyl/technology-stack/issues/94#issue-1261227465)
 _suggests_ that it will be replaced at some point.
 
-Even if **`Tailwind`** 
+Even if **`Tailwind`**
 does not become the `default` library
 for `CSS` in `Phoenix`,
 it's still going to be ours. 💭
 
 <br />
-
 
 # Who?
 
@@ -346,11 +338,11 @@ their knowledge of `Tailwind`
 with a team/community of people.
 
 > If you find this useful,
-please ⭐ on GitHub
-to let us and others know. 
-Thanks! 🙏
+> please ⭐ on GitHub
+> to let us and others know.
+> Thanks! 🙏
 
-# How? 
+# How?
 
 If you just want to test
 `Tailwind` with the least effort,
@@ -359,42 +351,40 @@ use the online playground:
 
 ![tailwind-play-color-change](https://user-images.githubusercontent.com/194400/174629457-cda42165-8242-4f04-afe1-8d7c75da6c2b.gif)
 
-
-Speed-read through the docs: 
+Speed-read through the docs:
 [tailwindcss.com/**docs/utility-first**](https://tailwindcss.com/docs/utility-first)
 and try a changing a few values,
 e.g: start by changing color names.
 
-## Part 1: `Try` _Before_ You `Commit` 
+## Part 1: `Try` _Before_ You `Commit`
 
 The _official_
 [**get started guide**](https://tailwindcss.com/docs/installation)
-instructs you to perform several setup (installation) steps 
-***`before`***
-you try the framework. 
+instructs you to perform several setup (installation) steps
+**_`before`_**
+you try the framework.
 But you can skip these steps
 if you just want to _evaluate_ it.
 
 ### Create `index.html`
 
-Create an `index.html` file 
-on your computer 
+Create an `index.html` file
+on your computer
 with the following contents:
 https://raw.githubusercontent.com/tailwindtoolbox/Admin-Template/master/index.html
 
-Open the file in your web brower, 
-you should see 
+Open the file in your web brower,
+you should see
 something similar to:
 
 ![admin-dashboard-example](https://user-images.githubusercontent.com/194400/174832000-4ac4e3ee-9e76-4fcc-80d7-6a8cdb72aa8b.png)
 
-Once you've made a few changes 
+Once you've made a few changes
 in the `index.html` file
 and seen the results
 in your web browser,
-you should have a decent idea 
+you should have a decent idea
 of the power of `Tailwind`.
-
 
 If you have a decent Internet connection
 and no bandwidth constraints,
@@ -405,15 +395,21 @@ Designing with Tailwind CSS: The Utility-First Workflow:
 [![Designing with Tailwind CSS](https://user-images.githubusercontent.com/194400/175198147-10656a1b-53e2-4061-b1f1-d27bc32dee08.png)](https://www.youtube.com/watch?v=Ybybd3GCNn4&list=PL7CcGwsqRpSM3w9BT_21tUU8JN2SnyckR&index=2)
 
 made by
-[Adam Wathan](https://adamwathan.me/) 
+[Adam Wathan](https://adamwathan.me/)
 [**`@adamwathan`**](https://github.com/adamwathan)
 (Creator of Tailwind)
+
+## Colors!
+
+We are _huge_ fans of the numeric indexing of the built-in colors:
+https://tailwindcss.com/docs/customizing-colors
+![tailwind-colors](https://user-images.githubusercontent.com/194400/179340012-4dce92f1-b13d-4840-b1f5-77d4c9409f8a.png)
 
 <br />
 
 ## Part 2: `Tailwind` in `Phoenix`
 
-To run the _finished_ version of our 
+To run the _finished_ version of our
 **`Tailwind` + `Phoenix` _Demo_**,
 run:
 
@@ -423,13 +419,10 @@ mix setup
 mix phx.server
 ```
 
-
-
-
 ### Build Log (How we got here)
 
-
 Create a _barebones_ Phoenix App:
+
 ```sh
 mix phx.new app --no-mailer --no-dashboard --no-gettext --no-ecto
 ```
@@ -438,11 +431,13 @@ Install the dependencies.
 Then open the project in your editor.
 
 Run the app:
+
 ```
 mix phx.server
 ```
 
 You should see output similar to the following in your terminal:
+
 ```sh
 Generated app app
 [info] Running AppWeb.Endpoint with cowboy 2.9.0 at 127.0.0.1:4000 (http)
@@ -454,32 +449,32 @@ Generated app app
 That's a good sign, `esbuild` was downloaded
 and the assets were compiled successfully.
 
-Visit 
-[`localhost:4000`](http://localhost:4000) 
+Visit
+[`localhost:4000`](http://localhost:4000)
 from your browser.
 
-You should see something similar to the following 
+You should see something similar to the following
 (default `Phoenix` homepage):
 
 ![phoenix-default-homepage](https://user-images.githubusercontent.com/194400/174807257-34120dc5-723e-4b2c-9e8e-4b6f3aefca14.png)
 
-That's nice. But a bit 
-[boring ...](https://www.google.com/search?q=boring+meme&source=lnms) 
-let's add some pizzazz! ✨ 
+That's nice. But a bit
+[boring ...](https://www.google.com/search?q=boring+meme&source=lnms)
+let's add some pizzazz! ✨
 
-Open the `mix.exs` file and add `:tailwind` to `defp deps`: 
+Open the `mix.exs` file and add `:tailwind` to `defp deps`:
 
 ```elixir
 {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
 ```
 
 Run:
+
 ```sh
 mix deps.get
 ```
 
-
-Once installed, 
+Once installed,
 add the following lines to `config/config.exs`
 to pick your tailwind version of choice:
 
@@ -497,15 +492,15 @@ config :tailwind,
 ```
 
 Now you can intall the library:
+
 ```sh
 mix tailwind.install
 ```
 
 That will create a `assets/tailwind.config.js` file.
 
-
-For development, we want to enable watch mode. 
-So find the `watchers` section in `config/dev.exs` 
+For development, we want to enable watch mode.
+So find the `watchers` section in `config/dev.exs`
 and add:
 
 ```elixir
@@ -515,27 +510,30 @@ tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
 > **Note**: this enables the file system watcher.
 
 Ensure that the `import "../css/app.css"` line
-is no longer in `assets/js/app.js` 
+is no longer in `assets/js/app.js`
 (should have automatically been removed by adding `Tailwind` ...)
 
-Finally, back in your `mix.exs`, 
-make sure you have a `assets.deploy` alias for deployments, 
+Finally, back in your `mix.exs`,
+make sure you have a `assets.deploy` alias for deployments,
 which will also use the `--minify` option:
 
 ```elixir
 "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
 ```
 
-Open the `lib/app_web/templates/page/index.html.heex` 
+Open the `lib/app_web/templates/page/index.html.heex`
 and replace the contents with:
 
 ```html
-<h1 class="text-7xl text-white font-bold text-center w-full bg-slate-800 rounded-xl shadow-lg py-3 mt-3 ml-3">
+<h1
+  class="text-7xl text-white font-bold text-center w-full bg-slate-800 rounded-xl shadow-lg py-3 mt-3 ml-3"
+>
   Hello TailWorld!
 </h1>
 ```
 
 Run the `Phoenix` App:
+
 ```sh
 mix phx.server
 ```
@@ -546,23 +544,24 @@ in your web browser:
 ![image](https://user-images.githubusercontent.com/194400/174838767-20bf201e-3179-4ff9-8d5d-751295d1d069.png)
 
 Those semantic utility class names should give you a _flavour_
-for what to expect in the UI. 
+for what to expect in the UI.
 
 Fix the failing tests!
 
 Open `test/app_web/controllers/page_controller_test.exs`
 and change the assertion from:
+
 ```elixir
 assert html_response(conn, 200) =~ "Welcome to Phoenix!"
 ```
 
 to:
+
 ```elixir
 assert html_response(conn, 200) =~ "Hello TailWorld!"
 ```
 
 ### More Detailed Example!
-
 
 We're using `Tailwind` for our `Phoenix LiveView` Chat Example:
 https://github.com/dwyl/phoenix-liveview-chat-example
