@@ -10,12 +10,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <a href="https://phoenixframework.org/" class="mx-auto">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo" class="mx-auto"/>
+
+    <header class="bg-slate-800 w-full min-h-[12%]">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2 rounded dark:bg-gray-900">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+        <a href="https://github.com/iteles" class="flex items-center">
+            <img src="https://avatars.githubusercontent.com/u/4185328?s=88&u=328b0bfd79c6d0acb009c2802a84a817e61e1614&v=4" class="mr-3 h-6 sm:h-9 rounded-full" alt="dwyl logo">
         </a>
-      </section>
+        <a href="/" class="flex items-center">
+            <img src="https://dwyl.com/img/favicon-32x32.png" class="mr-3 h-6 sm:h-9" alt="dwyl logo">
+        </a>
+
+        <button class="bg-teal-600 text-white rounded-xl px-3 py-1 text-sm align-middle float-right mr-1">
+          <%= link "logout", to: "/login" %>
+        </button>
+      </div>
+    </nav>
     </header>
     <%= @inner_content %>
   </body>
