@@ -592,3 +592,24 @@ https://github.com/dwyl/phoenix-liveview-chat-example
 
 We think it's _siiiiiiick_!
 More examples to follow soon!
+
+### Petal Components
+
+<img width="545" alt="petal.build" src="https://user-images.githubusercontent.com/194400/193780264-16a4330d-df64-4f04-9c89-2d6b1146ad32.png">
+
+Petal components are a set of reusable functions to help you build a nice UI:
+
+![image](https://user-images.githubusercontent.com/6057298/193790320-a436dc02-d86f-49d9-9bc2-cfc7d76e4e91.png)
+
+
+Follow the instructions steps at https://petal.build/components to install the
+Petal components to your Phoenix project. After that you'll be able to call in your
+templates the components with the syntax `<.component>...</.component>`, for example:
+
+```heex
+<.h2>Title</.h2>
+```
+
+see: 
+- https://petal.build/
+- https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html
