@@ -487,7 +487,7 @@ let's add some pizzazz! ✨
 Open the `mix.exs` file and add `:tailwind` to `defp deps`:
 
 ```elixir
-{:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
+{:tailwind, "~> 0.1.9", runtime: Mix.env() == :dev},
 ```
 
 Run:
@@ -513,13 +513,19 @@ config :tailwind,
   ]
 ```
 
-Now you can intall the library:
+Now you can install the library.
+Run the following commands in order.
 
 ```sh
 mix tailwind.install
+mix tailwind default
 ```
-
-That will create a `assets/tailwind.config.js` file.
+These commands will generate the 
+Tailwind CLI and
+create a `assets/tailwind.config.js` file.
+They will also create an executable
+inside `_build/tailwind-TARGET`
+where TARGET is your target system architecture.
 
 For development, we want to enable watch mode.
 So find the `watchers` section in `config/dev.exs`
