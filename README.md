@@ -10,7 +10,7 @@ beautifully adaptive
 web apps/sites
 in less time.
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/learn-tailwind/Elixir%20CI?label=build&style=flat-square)](https://github.com/dwyl/learn-tailwind/actions/workflows/ci.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/learn-tailwind/ci.yml?label=build&style=flat-square&branch=main)
 [![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tailwind/main.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-tailwind?branch=main)
 [![npm package version](https://img.shields.io/npm/v/tailwindcss.svg?style=flat-square)](https://www.npmjs.com/package/tailwindcss)
 [![Hex.pm](https://img.shields.io/hexpm/v/phoenix?color=brightgreen&style=flat-square)](https://hex.pm/packages/phoenix)
