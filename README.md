@@ -11,11 +11,11 @@ web apps/sites
 in less time.
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/learn-tailwind/ci.yml?label=build&style=flat-square&branch=main)
-[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tailwind/main.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-tailwind?branch=main)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tailwind/main.svg?style=flat-square)](https://codecov.io/github/dwyl/learn-tailwind?branch=main)
 [![npm package version](https://img.shields.io/npm/v/tailwindcss.svg?style=flat-square)](https://www.npmjs.com/package/tailwindcss)
 [![Hex.pm](https://img.shields.io/hexpm/v/phoenix?color=brightgreen&style=flat-square)](https://hex.pm/packages/phoenix)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-tailwind/issues)
-[![HitCount](http://hits.dwyl.com/dwyl/learn-tailwind.svg)](http://hits.dwyl.com/dwyl/learn-tailwind)
+[![HitCount](https://hits.dwyl.com/dwyl/learn-tailwind.svg)](https://hits.dwyl.com/dwyl/learn-tailwind)
 
 </div>
 <br />
