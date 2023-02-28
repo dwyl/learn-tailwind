@@ -38,6 +38,7 @@ Use these links to skip stright to the section that interests you:
   - [Part 2: `Tailwind` in `Phoenix`](#part-2-tailwind-in-phoenix)
     - [Build Log (How we got here)](#build-log-how-we-got-here)
     - [More Detailed Example!](#more-detailed-example)
+    - [Petal Components](#petal-components)
 
 # Why?
 
@@ -303,43 +304,12 @@ and we have not been disapointed.
 
 ## `Tailwind` in `Phoenix`
 
-There are already _official_ instructions
-in the **`Tailwind` docs** for **`Phoenix`**:
-[tailwindcss.com/docs/guides/**phoenix**](https://tailwindcss.com/docs/guides/phoenix)
-
-We strongly suspect **`Tailwind`** will be _included_
-in a **_future_ `Phoenix` release** ... 🔮 <br />
-
-At this point **`2022-06-21`** it is _speculation_,
-because there is no
-[**`public` roadmap**](https://github.com/dwyl/product-roadmap)
-for **`Phoenix`**. 🤷‍♀️ <br />
-However given that
-[**Chris McCord**](https://github.com/chrismccord)
-_creator_ of
-[**`Phoenix`**](https://www.phoenixframework.org/)
-is _actively_
-working on an **_official_
-`Tailwind` package** for **`Phoenix`**:
-[github.com/**phoenixframework/tailwind**](https://github.com/phoenixframework/tailwind)
-and is _using_ it at his
-["day job"](https://github.com/dwyl/learn-devops/issues/72#issuecomment-917442712)
-building the
-[Fly.io dashboard](https://github.com/dwyl/technology-stack/issues/87#issuecomment-1161649391),
-we take this as very good sign.
-
-Also, the fact that
-[Milligram](https://github.com/milligram/milligram),
-the _current_ default `CSS` library
-[included with `Phoenix@1.6.x`](https://github.com/phoenixframework/phoenix/blob/e0991bb3eea1fd397a898bc2640e3efd72b065c0/installer/templates/phx_static/phoenix.css#L5)
-was
-[last updated **2 years** ago ...](https://github.com/dwyl/technology-stack/issues/94#issue-1261227465)
-_suggests_ that it will be replaced at some point.
-
-Even if **`Tailwind`**
-does not become the `default` library
-for `CSS` in `Phoenix`,
-it's still going to be ours. 💭
+As of `Phoenix 1.7`,
+`Tailwind` is now included by `default`.
+We 
+[called it](https://github.com/dwyl/learn-tailwind/tree/25a08d3bbd976e76ae1c0ce631d72f18b5062fd4#tailwind-in-phoenix)
+last year.
+And we're _delighted_ our investment payed off!
 
 <br />
 

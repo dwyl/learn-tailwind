@@ -4,7 +4,7 @@ defmodule App.MixProject do
   def project do
     [
       app: :app,
-      version: "0.1.0",
+      version: "0.1.10",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: Mix.compilers(),
@@ -46,6 +46,7 @@ defmodule App.MixProject do
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.18.0"},
+      {:phoenix_view, "~> 2.0.0"},
       {:floki, ">= 0.30.0", only: :test},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
@@ -57,7 +58,7 @@ defmodule App.MixProject do
       {:excoveralls, "~> 0.15.0", only: :test},
 
       # The ⭐ of the show! hex.pm/packages/tailwind
-      {:tailwind, "~> 0.1.6", runtime: Mix.env() == :dev},
+      {:tailwind, "~> 0.1.10", runtime: Mix.env() == :dev},
     ]
   end
 
