@@ -58,7 +58,7 @@ defmodule App.MixProject do
       {:excoveralls, "~> 0.16.0", only: :test},
 
       # The ⭐ of the show! hex.pm/packages/tailwind
-      {:tailwind, "~> 0.1.10", runtime: Mix.env() == :dev},
+      {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
     ]
   end
 
